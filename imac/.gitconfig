@@ -1,0 +1,31 @@
+[user]
+	name = Eric Vantillard
+	email = eric.vantillard@evaxion.fr
+[core]
+	excludesfile = /Users/evantill/.gitignore_global
+	editor = "subl -n -w"
+	autocrlf = false
+	eol = lf
+[alias]
+	st = status
+	ci = commit
+	co = checkout
+	br = branch
+[color]
+	branch = auto
+	diff = auto
+	interactive = auto
+	status = auto
+	ui = true
+[merge]
+	summary = true
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+[push]
+	default = tracking
+[credential]
+	helper = osxkeychain
